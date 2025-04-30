@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <footer class="pt-8 overflow-hidden relative">
+    <footer class="overflow-hidden relative">
         <div class="px-4 bg-[#FF8300]">
             <div class="neptun-icon absolute top-1/2 -translate-y-1/2 right-[-100px] w-[600px] h-[600px] transition-transform duration-300 ease-in-out hover:translate-x-[-20px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="442.03" height="565" viewBox="0 0 442.03 565" class="relative -right-[195px] w-[540px] h-[540px]">
@@ -25,7 +25,7 @@
                 </svg>
             </div>
             <div class="container mx-auto relative z-10">
-               <div class="row flex items-center gap-20">
+               <div class="row flex justify-between items-center pt-[30px] pb-[100px]">
                   <div class="flex flex-col lg:flex-row items-center gap-5">
                      <i class="fa-solid fa-truck text-2xl text-white transition-transform duration-300 ease-in-out hover:scale-110"></i>
                      <span class="text-white text-center text-sm">Pulsuz çatdırılma<br>50 azn-dan yuxarı</span>
@@ -48,19 +48,21 @@
                   </div>
                </div>
                <div class="row">
-                 <div class="subscribe flex flex-col md:flex-row mt-15 text-xs sm:mb-2 mr-[50px]">
+                 <div class="subscribe flex flex-col md:flex-row mt-10 text-xs sm:mb-2 mr-[50px]">
                     <div class="text-white mr-15 mb-3 font-bold">Bizə abunə olun</div>
-                    <div class="flex items-center bg-white border border-white rounded-full overflow-hidden w-[480px] max-w-full md:w-[350px]">
-                        <input type="email" placeholder="e-poçt ünvanınız..." class="flex-grow px-4 py-2 text-gray-700 bg-white focus:outline-none rounded-full" />
-                        <button class="bg-[#FF8300] text-white font-bold px-6 py-3 rounded-full cursor-pointer hover:bg-[#E77904] transition">
+                    <div class="flex flex-nowrap gap-2 items-center w-full max-w-[400px]">
+                      <div class="flex items-center bg-white border border-white rounded-full overflow-hidden w-full">
+                        <input type="email" placeholder="e-poçt ünvanınız..." class="px-4 h-10 text-gray-700 bg-white focus:outline-none w-full" />
+                        <button class="bg-[#FF8300] text-white font-bold px-4 h-10 shrink-0 rounded-full cursor-pointer hover:bg-[#E77904] transition">
                           Abunə ol
                         </button>
+                    </div>
                     </div>
                  </div>
                  <div class="sms flex flex-col md:flex-row mt-8 text-xs sm:mb-2 mr-[50px]">
                     <div class="text-white mr-7 mb-3 font-bold">Sms xəbərdarlıq üçün</div>
-                    <div class="flex flex-row gap-5">
-                      <select class="rounded-full px-4 h-10 text-gray-700 focus:outline-none bg-white w-20">
+                    <div class="flex flex-nowrap gap-5 w-full max-w-[400px]">
+                      <select class="rounded-full px-4 h-10 text-gray-700 focus:outline-none bg-white w-[70px] shrink-0">
                         <option>---</option>
                         <option>050</option>
                         <option>051</option>
@@ -68,11 +70,11 @@
                         <option>070</option>
                         <option>077</option>
                     </select>
-                    <div class="flex items-center bg-white border border-white rounded-full overflow-hidden w-[380px] max-w-full md:w-[250px]">
+                    <div class="flex items-center bg-white border border-white rounded-full overflow-hidden flex-grow">
                         <input 
                           type="text"
                           placeholder="XXX YY ZZ" 
-                          class="flex-grow px-4 h-10 text-gray-700 bg-white focus:outline-none rounded-full" />
+                          class="px-4 h-10 text-gray-700 bg-white focus:outline-none w-full" />
                         <button 
                           class="bg-[#FF8300] text-white font-bold px-6 h-10 rounded-full cursor-pointer hover:bg-[#E77904] transition">
                           Abunə ol
