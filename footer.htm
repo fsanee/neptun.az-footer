@@ -52,8 +52,8 @@
                     <div class="text-white mr-15 mb-3 font-bold">Bizə abunə olun</div>
                     <div class="flex flex-nowrap gap-2 items-center w-full max-w-[400px]">
                       <div class="flex items-center bg-white border border-white rounded-full overflow-hidden w-full">
-                        <input type="email" placeholder="e-poçt ünvanınız..." class="px-4 h-10 text-gray-700 bg-white focus:outline-none w-full" />
-                        <button class="bg-[#FF8300] text-white font-bold px-4 h-10 shrink-0 rounded-full cursor-pointer hover:bg-[#E77904] transition">
+                        <input id="emailinp" type="email" placeholder="e-poçt ünvanınız..." class="px-4 h-10 text-gray-700 bg-white focus:outline-none w-full" />
+                        <button id="emailbtn" class="bg-[#FF8300] text-white font-bold px-4 h-10 shrink-0 rounded-full cursor-pointer hover:bg-[#E77904] transition">
                           Abunə ol
                         </button>
                     </div>
@@ -71,11 +71,10 @@
                         <option>077</option>
                     </select>
                     <div class="flex items-center bg-white border border-white rounded-full overflow-hidden flex-grow">
-                        <input 
-                          type="text"
+                        <input id="nomreinp" type="text"
                           placeholder="XXX YY ZZ" 
                           class="px-4 h-10 text-gray-700 bg-white focus:outline-none w-full" />
-                        <button 
+                        <button id="nomrebtn"
                           class="bg-[#FF8300] text-white font-bold px-6 h-10 rounded-full cursor-pointer hover:bg-[#E77904] transition">
                           Abunə ol
                         </button>
@@ -85,16 +84,16 @@
                  <div class="socials flex flex-col md:flex-row mt-8 text-xs font-bold sm:mb-2">
                     <div class="text-white mr-26">Bizi izləyin</div>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
+                        <a href="https://www.facebook.com/neptunsupermarketler" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
                           <span class="text-[#FF8300] text-2xl font-bold group-hover:text-white">f</span>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
+                        <a href="https://www.instagram.com/neptunsupermarket" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
                           <i class="fa-brands fa-instagram text-[#FF8300] text-xl group-hover:text-white"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
+                        <a href="https://www.youtube.com/user/NeptunSupermarkets" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
                           <i class="fa-brands fa-youtube text-[#FF8300] text-xl group-hover:text-white"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
+                        <a href="https://www.linkedin.com/company/neptun-supermarket/?originalSubdomain=az" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#E77904] group">
                           <i class="fa-brands fa-linkedin-in text-[#FF8300] text-xl group-hover:text-white"></i>
                         </a>
                       </div>
@@ -147,6 +146,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+      document.getElementById("emailbtn").addEventListener("click", function(event) {
+        const email = document.getElementById("emailinp").value.trim();
+        if (!email) {
+          alert("Email vacibdir");
+        } else {
+          console.log("Email daxil edilib:", email);
+        }
+      });
+
+      document.getElementById("nomrebtn").addEventListener("click", function(event) {
+        const email = document.getElementById("nomreinp").value.trim();
+        if (!email) {
+          alert("Nömrə və İndex vacibdir");
+        } else {
+          console.log("Nömrə daxil edilib:", email);
+        }
+      });
+    </script>
+    
 </body>
 </html>
 
